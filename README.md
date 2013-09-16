@@ -1,22 +1,17 @@
-
-Lightstreamer Reusable Metadata Adapter in Java
-===============================================
+# Lightstreamer Reusable Metadata Adapter in Java #
 
 This project includes two simple full implementations of Metadata Adapter in Java made available as sample for inspiration and/or extension.
 
-LiteralBasedProvider Metadata Adapter
--------------------------------------
+## LiteralBasedProvider Metadata Adapter ##
 
 The LiteralBasedProvider extends the MetadataProviderAdapter abstract class (which in turn implements the MetadataProvider interface). It is used in many Lightstreamer examples and demos, in combination with different Data Adapters and Clients.
 It is also useful when developing proof of concepts and prototypes where the main focus is on the Data Adapter.
 
-FileBasedProvider Metadata Adapter
-----------------------------------
+## FileBasedProvider Metadata Adapter ##
 
 The FileBasedProvider extends the LiteralBasedProvider, but is rarely used.
 
-Build the Adapters
-------------------
+# Build #
 
 Before you can compile the adapters in the jar some dependencies need to be solved:
 * Get the ls-adapter-interface.jar file from the [Lightstreamer 5 Colosseo distribution](http://www.lightstreamer.com/download).
@@ -28,8 +23,7 @@ Now you can generate the ls-adapter.interface.jar with the following commands:
   >jar cvf ls-adapter-interface.jar -C tmp_classes src
 ```
 
-Deployment
-----------
+# Deploy #
 
 To use these Metadata Adapters, just copy the ls-generic-adapters.jar file to the "shared/lib" directory of your Lightstreamer Server installation (usually that jar file comes pre-installed). 
 Then configure the right Metadata provider and its properties in the "adapters.xml" descriptor file within your adapters' subfolder. The following code snippet shows an example: 
@@ -97,15 +91,13 @@ Then configure the right Metadata provider and its properties in the "adapters.x
   </metadata_provider>
 ```
 
-See Also
---------
+# See Also #
 
 * [Lightstreamer Portfolio Demo Adapter](https://github.com/Weswit/Lightstreamer-example-Portfolio-adapter-java)
 * [Lightstreamer StockList Demo Adapter](https://github.com/Weswit/Lightstreamer-example-Stocklist-adapter-java)
 * [Lightstreamer Chat Demo Adapter](https://github.com/Weswit/Lightstreamer-example-Chat-adapter-java)
 * [Lightstreamer Instant Messenger Demo Adapter](https://github.com/Weswit/Lightstreamer-example-Messenger-adapter-java)
 
-Lightstreamer Compatibility Notes
----------------------------------
+# Lightstreamer Compatibility Notes #
 
 - Compatible with Lightstreamer SDK for Java Adapters since 5.1
