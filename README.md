@@ -1,4 +1,4 @@
-# Lightstreamer Reusable Metadata Adapter in Java #
+# Lightstreamer - Reusable Metadata Adapters - Java SE Adapters #
 
 This project includes two simple full implementations of Metadata Adapter in Java made available as sample for inspiration and/or extension.
 
@@ -93,10 +93,10 @@ Then configure the right Metadata provider and its properties in the "adapters.x
 
 # See Also #
 
-* [Lightstreamer Portfolio Demo Adapter](https://github.com/Weswit/Lightstreamer-example-Portfolio-adapter-java)
-* [Lightstreamer StockList Demo Adapter](https://github.com/Weswit/Lightstreamer-example-Stocklist-adapter-java)
-* [Lightstreamer Chat Demo Adapter](https://github.com/Weswit/Lightstreamer-example-Chat-adapter-java)
-* [Lightstreamer Instant Messenger Demo Adapter](https://github.com/Weswit/Lightstreamer-example-Messenger-adapter-java)
+* [Lightstreamer - Portfolio Demo - Java SE Adapter](https://github.com/Weswit/Lightstreamer-example-Portfolio-adapter-java)
+* [Lightstreamer - StockList Demo - Java SE Adapter](https://github.com/Weswit/Lightstreamer-example-Stocklist-adapter-java)
+* [Lightstreamer - Basic Chat Demo - Java SE Adapter](https://github.com/Weswit/Lightstreamer-example-Chat-adapter-java)
+* [Lightstreamer - Basic Messenger Demo - Java SE Adapter](https://github.com/Weswit/Lightstreamer-example-Messenger-adapter-java)
 
 # Lightstreamer Compatibility Notes #
 
