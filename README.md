@@ -1,4 +1,4 @@
-# Lightstreamer - Reusable Metadata Adapters - Java SE Adapters #
+# Lightstreamer - Reusable Metadata Adapters - Java SE Adapter #
 
 This project includes two simple full implementations of Metadata Adapter in Java made available as sample for inspiration and/or extension.
 
