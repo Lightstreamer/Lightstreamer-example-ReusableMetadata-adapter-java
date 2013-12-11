@@ -94,7 +94,7 @@ Then configure the right Metadata provider and its properties in the "adapters.x
 # See Also #
 
 * [Lightstreamer - Portfolio Demo - Java SE Adapter](https://github.com/Weswit/Lightstreamer-example-Portfolio-adapter-java)
-* [Lightstreamer - StockList Demo - Java SE Adapter](https://github.com/Weswit/Lightstreamer-example-Stocklist-adapter-java)
+* [Lightstreamer - Stock-List Demo - Java SE Adapter](https://github.com/Weswit/Lightstreamer-example-Stocklist-adapter-java)
 * [Lightstreamer - Basic Chat Demo - Java SE Adapter](https://github.com/Weswit/Lightstreamer-example-Chat-adapter-java)
 * [Lightstreamer - Basic Messenger Demo - Java SE Adapter](https://github.com/Weswit/Lightstreamer-example-Messenger-adapter-java)
 
