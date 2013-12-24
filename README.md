@@ -1,4 +1,5 @@
 # Lightstreamer - Reusable Metadata Adapters - Java Adapter #
+<!-- START DESCRIPTION Reusable Metadata Adapters -->
 
 This project includes two simple full implementations of Metadata Adapter in Java made available as sample for inspiration and/or extension.
 
@@ -22,6 +23,7 @@ Now you can generate the ls-adapter.interface.jar with the following commands:
 
   >jar cvf ls-adapter-interface.jar -C tmp_classes src
 ```
+<!-- END DESCRIPTION Reusable Metadata Adapters -->
 
 # Deploy #
 
@@ -92,11 +94,14 @@ Then configure the right Metadata provider and its properties in the "adapters.x
 ```
 
 # See Also #
+<!-- START RELATED_ENTRIES -->
 
 * [Lightstreamer - Portfolio Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-Portfolio-adapter-java)
 * [Lightstreamer - Stock-List Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-Stocklist-adapter-java)
 * [Lightstreamer - Basic Chat Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-Chat-adapter-java)
 * [Lightstreamer - Basic Messenger Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-Messenger-adapter-java)
+
+<!-- END RELATED_ENTRIES -->
 
 # Lightstreamer Compatibility Notes #
 
