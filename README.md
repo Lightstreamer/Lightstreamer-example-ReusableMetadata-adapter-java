@@ -1,5 +1,5 @@
 # Lightstreamer - Reusable Metadata Adapters - Java Adapter #
-<!-- START DESCRIPTION Reusable Metadata Adapters -->
+<!-- START DESCRIPTION lightstreamer-example-reusablemetadata-adapter-java -->
 
 This project includes two simple full implementations of Metadata Adapter in Java made available as sample for inspiration and/or extension.
 
@@ -11,7 +11,7 @@ It is also useful when developing proof of concepts and prototypes where the mai
 ## FileBasedProvider Metadata Adapter ##
 
 The FileBasedProvider extends the LiteralBasedProvider, but is rarely used.
-<!-- END DESCRIPTION Reusable Metadata Adapters -->
+<!-- END DESCRIPTION lightstreamer-example-reusablemetadata-adapter-java -->
 
 # Build #
 
