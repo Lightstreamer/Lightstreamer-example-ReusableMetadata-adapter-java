@@ -11,6 +11,7 @@ It is also useful when developing proof of concepts and prototypes where the mai
 ## FileBasedProvider Metadata Adapter ##
 
 The FileBasedProvider extends the LiteralBasedProvider, but is rarely used.
+<!-- END DESCRIPTION Reusable Metadata Adapters -->
 
 # Build #
 
@@ -23,7 +24,6 @@ Now you can generate the ls-adapter.interface.jar with the following commands:
 
   >jar cvf ls-adapter-interface.jar -C tmp_classes src
 ```
-<!-- END DESCRIPTION Reusable Metadata Adapters -->
 
 # Deploy #
 
