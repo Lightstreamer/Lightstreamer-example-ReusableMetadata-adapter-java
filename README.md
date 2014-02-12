@@ -23,9 +23,9 @@ Before you can compile the adapters in the jar some dependencies need to be solv
 
 Now you can generate the jar for the sample Metadata Adapters, let's call it ls-generic-adapters.jar, with the following commands:
 ```sh
-  >javac -source 1.7 -target 1.7 -nowarn -g -classpath compile_libs/ls-adapter-interface.jar -sourcepath src -d tmp_classes src/com/lightstreamer/adapters/metadata/LiteralBasedProvider.java
+  >javac -source 1.7 -target 1.7 -nowarn -g -classpath compile_libs/ls-adapter-interface.jar -sourcepath src -d tmp_classes src/com/lightstreamer/adapters/metadata/LiteralBasedProvider.java src/com/lightstreamer/adapters/metadata/FileBasedProvider.java
 
-  >jar cvf ls-adapter-interface.jar -C tmp_classes src
+  >jar cvf ls-generic-adapters.jar -C tmp_classes com/lightstreamer
 ```
 
 # Deploy #
