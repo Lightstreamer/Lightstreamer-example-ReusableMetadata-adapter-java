@@ -19,9 +19,9 @@ The docs folder contains the complete javadocs for the classes included in this 
 # Build #
 
 Before you can compile the adapters in the jar some dependencies need to be solved:
-* Get the ls-adapter-interface.jar file from the [Lightstreamer 5 Colosseo distribution](http://www.lightstreamer.com/download).
+* Get the ls-adapter-interface.jar file from the [Lightstreamer 5 Colosseo distribution](http://www.lightstreamer.com/download), you can find it in the "Lightstreamer/DOCS-SDKs/sdk_adapter_java/lib" folder, and put it in a temporary folder, let's call it "compile_libs".
 
-Now you can generate the ls-adapter.interface.jar with the following commands:
+Now you can generate the jar for the sample Metadata Adapters, let's call it ls-generic-adapters.jar, with the following commands:
 ```sh
   >javac -source 1.7 -target 1.7 -nowarn -g -classpath compile_libs/ls-adapter-interface.jar -sourcepath src -d tmp_classes src/com/lightstreamer/adapters/metadata/LiteralBasedProvider.java
 
