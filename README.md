@@ -7,7 +7,7 @@ This project includes two simple full implementations of Metadata Adapter in Jav
 ## LiteralBasedProvider Metadata Adapter
 
 The LiteralBasedProvider extends the MetadataProviderAdapter abstract class (which in turn implements the MetadataProvider interface). It is used in many Lightstreamer examples and demos, in combination with different Data Adapters and Clients.
-It is also useful when developing proof of concepts and prototypes where the main focus is on the Data Adapter.
+It is also useful when developing proof of concepts and prototypes, where the main focus is on the Data Adapter.
 
 ## FileBasedProvider Metadata Adapter
 
@@ -19,7 +19,7 @@ The docs folder contains the complete javadocs for the classes included in this 
 
 ## Build
 
-Before you can compile the adapters in the jar some dependencies need to be solved:
+Before you can compile the adapters in the jar, some dependencies need to be solved:
 * Get the `ls-adapter-interface.jar` file from the [Lightstreamer 5 Colosseo distribution](http://www.lightstreamer.com/download), you can find it in the `Lightstreamer/DOCS-SDKs/sdk_adapter_java/lib` folder, and put it in a temporary folder, let's call it `compile_libs`.
 
 Now you can generate the jar for the sample Metadata Adapters, let's call it `ls-generic-adapters.jar`, with the following commands:
@@ -82,7 +82,7 @@ Then configure the right Metadata provider and its properties in the `adapters.x
              If no families are specified at all, then modeMayBeAllowed
              always returns true, though this is not recommended, because
              the Server does not support more than one mode out of MERGE,
-             DISTINCT and COMMAND for the same item. In such a case, the
+             DISTINCT, and COMMAND for the same item. In such a case, the
              Server would just manage each item in the mode specified by the
              first Client request it receives for the item and would be up to
              the Clients to ensure that the same item cannot be requested in
