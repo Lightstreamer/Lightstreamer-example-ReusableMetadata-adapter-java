@@ -37,13 +37,17 @@ import com.lightstreamer.interfaces.metadata.SchemaException;
 
 /**
  * Simple full implementation of a Metadata Adapter, made available
- * in Lightstreamer SDK. <BR>
+ * in Lightstreamer SDK. The Adapter is not meant for production use,
+ * but it can be used as a starting point for real Adapters.<BR>
  * 
  * The class handles Item List specifications, a special case of Item Group name
  * formed by simply concatenating the names of the Items contained in a List
  * in a space separated way. Similarly, the class
  * handles Field List specifications, a special case of Field Schema name
- * formed by concatenating the names of the contained Fields. <BR>
+ * formed by concatenating the names of the contained Fields.
+ * The handling of Item List and Field List specifications is required by
+ * some optional methods in the client APIs that take advantage of Item Lists
+ * and Field Lists. <BR>
  * 
  * The resource levels are assigned the same for all Items and Users,
  * according with values that can be supplied together with adapter
@@ -81,7 +85,71 @@ import com.lightstreamer.interfaces.metadata.SchemaException;
  * requested in two conflicting Modes. <BR>
  * There are no access restrictions, but an optional User name check is
  * performed if a comma separated list of User names is supplied in an
- * "allowed_users" parameter.
+ * "allowed_users" parameter. <BR>
+ * 
+ * The following snippet shows an example of configuration of this Adapter
+ * in adapters.xml:
+ * <PRE>
+ * {@code
+<!-- Mandatory. Define the Metadata Provider. -->
+<metadata_provider>
+
+    <!-- Mandatory. Java class name of the adapter. -->
+    <adapter_class>com.lightstreamer.adapters.metadata.LiteralBasedProvider</adapter_class>
+
+    ......
+
+    <!-- Optional. List of initialization parameters specific for LiteralBasedProvider. -->
+
+    <!-- Optional.
+         Define values to be returned in getAllowedMaxBandwidth(),
+         getAllowedMaxItemFrequency(), getAllowedBufferSize() and
+         getDistinctSnapshotLength() methods, for any User and Item
+         supplied. -->
+    <!--
+    <param name="max_bandwidth">40</param>
+    <param name="max_frequency">3</param>
+    <param name="buffer_size">30</param>
+    <param name="distinct_snapshot_length">10</param>
+     -->
+
+    <!-- Optional.
+         Define comma-separated list of User names to be checked
+         for allowance by the notifyUser() method. -->
+    <!--
+    <param name="allowed_users">user123,user456</param>
+     -->
+
+    <!-- Optional.
+         Define how the modeMayBeAllowed method should behave, by
+         associating to each item the modes in which it can be managed
+         by the Server.
+         Each pair of parameters of the form "item_family_<n>" and
+         "modes_for_item_family_<n>" define respectively the item name
+         pattern (in java.util.regex.Pattern format) and the allowed
+         modes (in comma separated format) for a family of items.
+         Each item is assigned to the first family that matches its name.
+         If no families are specified at all, then modeMayBeAllowed
+         always returns true, though this is not recommended, because
+         the Server does not support more than one mode out of MERGE,
+         DISTINCT, and COMMAND for the same item. In such a case, the
+         Server would just manage each item in the mode specified by the
+         first Client request it receives for the item and would be up to
+         the Clients to ensure that the same item cannot be requested in
+         two conflicting Modes. -->
+    <param name="item_family_1">item.*</param>
+    <param name="modes_for_item_family_1">MERGE</param>
+    <!--
+    <param name="item_family_2">portfolio.*</param>
+    <param name="modes_for_item_family_2">COMMAND</param>
+     -->
+
+</metadata_provider>
+ * }
+ * </PRE>
+ * 
+ * The source code of the Adapter is provided on GitHub:
+ * https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java
  */
 public class LiteralBasedProvider extends MetadataProviderAdapter {
 

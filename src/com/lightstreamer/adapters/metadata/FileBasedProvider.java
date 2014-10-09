@@ -32,7 +32,8 @@ import com.lightstreamer.interfaces.metadata.SchemaException;
 
 /**
  * Simple full implementation of a Metadata Adapter, made available
- * in Lightstreamer SDK. <BR>
+ * in Lightstreamer SDK. The Adapter is not meant for production use,
+ * but it can be used as a starting point for real Adapters. <BR>
  * 
  * The class allows Item Groups and Field Schemas to be stored as simple text files.
  * Any Item Group is stored in a file with the same name and a ".items" extension.
