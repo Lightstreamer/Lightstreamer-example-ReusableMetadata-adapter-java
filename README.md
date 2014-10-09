@@ -8,6 +8,7 @@ This project includes two simple full implementations of Metadata Adapter in Jav
 
 The LiteralBasedProvider extends the MetadataProviderAdapter abstract class (which in turn implements the MetadataProvider interface). It is used in many Lightstreamer examples and demos, in combination with different Data Adapters and Clients.
 It is also useful when developing proof of concepts and prototypes, where the main focus is on the Data Adapter.
+Its binaries are included in the Server distribution.
 
 ## FileBasedProvider Metadata Adapter
 
@@ -15,7 +16,6 @@ The FileBasedProvider extends the LiteralBasedProvider, but is rarely used.
 <!-- END DESCRIPTION lightstreamer-example-reusablemetadata-adapter-java -->
 <br>
 <br>
-The docs folder contains the complete javadocs for the classes included in this project joined for the convenience of the reader with the javadocs of the Java Adapter API Interfaces.
 
 ## Build
 
