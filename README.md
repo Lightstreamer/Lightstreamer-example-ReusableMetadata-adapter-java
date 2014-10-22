@@ -19,11 +19,16 @@ The FileBasedProvider extends the LiteralBasedProvider, but is rarely used.
 
 ## Build
 
-Before you can compile the adapters in the jar, some dependencies need to be solved:
-* Get the `ls-adapter-interface.jar` file from the [Lightstreamer 5 Colosseo distribution](http://www.lightstreamer.com/download), you can find it in the `Lightstreamer/DOCS-SDKs/sdk_adapter_java/lib` folder, and put it in a temporary folder, let's call it `compile_libs`.
+Before you can compile the adapters, some dependencies need to be solved:
+* Get the `ls-adapter-interface.jar` file from the [Lightstreamer 6 distribution](http://www.lightstreamer.com/download), you can find it in the `Lightstreamer/DOCS-SDKs/sdk_adapter_java/lib` folder, and put it in a temporary folder, let's call it `compile_libs`.
+
+Note that `ls-adapter-interface.jar` already includes the class files for com.lightstreamer.adapters.metadata.LiteralBasedProvider; we can ignore that for a moment.
+If you are testing your own modified version of the LiteralBasedProvider code, take care of changing the package name, or, at least, the class name.
 
 Now you can generate the jar for the sample Metadata Adapters, let's call it `ls-generic-adapters.jar`, with the following commands:
 ```sh
+  >mkdir tmp_classes
+
   >javac -source 1.7 -target 1.7 -nowarn -g -classpath compile_libs/ls-adapter-interface.jar -sourcepath src -d tmp_classes src/com/lightstreamer/adapters/metadata/LiteralBasedProvider.java src/com/lightstreamer/adapters/metadata/FileBasedProvider.java
 
   >jar cvf ls-generic-adapters.jar -C tmp_classes com/lightstreamer
@@ -31,7 +36,10 @@ Now you can generate the jar for the sample Metadata Adapters, let's call it `ls
 
 ### Deploy
 
-To use these Metadata Adapters, just copy the `ls-generic-adapters.jar` file to the `shared/lib` directory of your Lightstreamer Server installation (usually that jar file comes pre-installed). 
+To use one of the Metadata Adapters just built in some adapter set, just copy the `ls-generic-adapters.jar` file to the `lib` directory of the Adapter Set installation.
+To use these Metadata Adapters in multiple Adapter Sets, you may also copy the `ls-generic-adapters.jar` file in the `shared/lib` directory of your Lightstreamer Server installation. 
+As said, the class files for com.lightstreamer.adapters.metadata.LiteralBasedProvider are already included in `ls-adapter-interface.jar`, which is part of Lightstreamer Server installation; hence this step is not needed for the LiteralBasedProvider.
+
 Then configure the right Metadata provider and its properties in the `adapters.xml` descriptor file within your adapters' subfolder. The following code snippet shows an example: 
 ```xml
   <!-- Mandatory. Define the Metadata Provider. -->
@@ -110,4 +118,5 @@ Then configure the right Metadata provider and its properties in the `adapters.x
 
 ## Lightstreamer Compatibility Notes
 
-* Compatible with Lightstreamer SDK for Java Adapters version 5.1.x
+* Compatible with Lightstreamer SDK for Java In-Process Adapters since 6.0
+- For a version of this example compatible with Lightstreamer SDK for Java Adapters version 5.1, please refer to [this tag](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java/tree/for_Lightstreamer_5.1).
