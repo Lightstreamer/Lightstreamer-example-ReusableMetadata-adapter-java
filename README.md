@@ -110,4 +110,4 @@ Then configure the right Metadata provider and its properties in the `adapters.x
 
 ## Lightstreamer Compatibility Notes
 
-* Compatible with Lightstreamer SDK for Java Adapters since 5.1
+* Compatible with Lightstreamer SDK for Java Adapters version 5.1.x
