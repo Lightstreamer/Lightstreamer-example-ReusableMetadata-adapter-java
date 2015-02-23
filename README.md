@@ -105,7 +105,7 @@ Then configure the right Metadata provider and its properties in the `adapters.x
   </metadata_provider>
 ```
 
-Above, are shown only the specific parameters of *LiteralBasedProvider* Metadata Adapter. Use the generic template, `DOCS-SDKs/sdk_adapter_java_inprocess/doc/adapter_conf_template/adapters.xml`, as areference for a complete overview of configuration options.
+Above, are shown only the specific parameters of *LiteralBasedProvider* Metadata Adapter. Use the generic template, `DOCS-SDKs/sdk_adapter_java_inprocess/doc/adapter_conf_template/adapters.xml`, as a reference for a complete overview of configuration options.
 
 ## See Also
 <!-- START RELATED_ENTRIES -->
