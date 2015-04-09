@@ -20,7 +20,7 @@ The FileBasedProvider extends the LiteralBasedProvider, but is rarely used.
 ## Build
 
 Before you can compile the adapters, some dependencies need to be solved:
-* Get the `ls-adapter-interface.jar` file from the [Lightstreamer 6 distribution](http://www.lightstreamer.com/download), you can find it in the `Lightstreamer/DOCS-SDKs/sdk_adapter_java/lib` folder, and put it in a temporary folder, let's call it `compile_libs`.
+* Get the `ls-adapter-interface.jar` file from the [Lightstreamer 6 distribution](http://www.lightstreamer.com/download), you can find it in the `Lightstreamer/DOCS-SDKs/sdk_adapter_java_inprocess/lib` folder, and put it in a temporary folder, let's call it `compile_libs`.
 
 Note that `ls-adapter-interface.jar` already includes the class files for com.lightstreamer.adapters.metadata.LiteralBasedProvider; we can ignore that for a moment.
 If you are testing your own modified version of the LiteralBasedProvider code, take care of changing the package name, or, at least, the class name.
