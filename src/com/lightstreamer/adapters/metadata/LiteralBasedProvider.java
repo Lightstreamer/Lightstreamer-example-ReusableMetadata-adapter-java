@@ -1,6 +1,6 @@
 /*
 *
-* Copyright 2013 Weswit s.r.l.
+* Copyright (c) Lightstreamer Srl
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -149,7 +149,7 @@ import com.lightstreamer.interfaces.metadata.SchemaException;
  * </PRE>
  * 
  * The source code of the Adapter is provided on GitHub:
- * https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java
+ * https://github.com/Lightstreamer/Lightstreamer-example-ReusableMetadata-adapter-java
  */
 public class LiteralBasedProvider extends MetadataProviderAdapter {
 
