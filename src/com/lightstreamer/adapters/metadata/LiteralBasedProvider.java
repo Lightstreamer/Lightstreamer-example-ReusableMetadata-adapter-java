@@ -336,7 +336,7 @@ public class LiteralBasedProvider extends MetadataProviderAdapter {
      * @param sessionID A Session ID. Not used.
      * @param itemList An Item List specification.
      * @return An array with the names of the Items in the List.
-     * @throws ItemsException
+     * @throws ItemsException never thrown
      */
     public String[] getItems(String user, String sessionID, String itemList) throws ItemsException {
         return getItems(user, itemList);
@@ -370,7 +370,7 @@ public class LiteralBasedProvider extends MetadataProviderAdapter {
      * is to be applied to.
      * @param fieldList A Field List specification.
      * @return An array with the names of the Fields in the List.
-     * @throws SchemaException
+     * @throws SchemaException never thrown
      */
     public String[] getSchema(String user, String sessionID, String itemList, String fieldList)
             throws SchemaException {
