@@ -38,7 +38,7 @@ import com.lightstreamer.interfaces.metadata.SchemaException;
 /**
  * Simple full implementation of a Metadata Adapter, made available
  * in Lightstreamer SDK. The Adapter is not meant for production use,
- * but it can be used as a starting point for real Adapters.<BR>
+ * but it can be used as a starting point for real Adapters. <BR>
  * 
  * The class handles Item List specifications, a special case of Item Group name
  * formed by simply concatenating the names of the Items contained in a List
