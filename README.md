@@ -123,5 +123,5 @@ Above, are shown only the specific parameters of *LiteralBasedProvider* Metadata
 ## Lightstreamer Compatibility Notes
 
 * Compatible with Lightstreamer SDK for Java In-Process Adapters from version 6.0 to 7.2.
-- For a version of this example compatible with Lightstreamer SDK for Java Adapters version 7.3.0 or later, please refer to [this project] (https://github.com/Lightstreamer/Lightstreamer-lib-adapter-java-inprocess).
+- For a version of this example compatible with Lightstreamer SDK for Java Adapters version 7.3.0 or later, please refer to [this project](https://github.com/Lightstreamer/Lightstreamer-lib-adapter-java-inprocess).
 - For a version of this example compatible with Lightstreamer SDK for Java Adapters version 5.1, please refer to [this tag](https://github.com/Lightstreamer/Lightstreamer-example-ReusableMetadata-adapter-java/tree/for_Lightstreamer_5.1).
